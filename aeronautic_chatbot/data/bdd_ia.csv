@@ -1,0 +1,1248 @@
+classification,ID,Evenement Indésirable,conséquence,Pire scénario considéré,Gravité (S0-S5),Probabilité,Acceptabilité de risque
+facteurs humains,1,"Passager ou membre d’équipage gravement malade, blessé ou rendu inapte à toute fonction","1. Détournement ou déroutement de l’avion.
+2. Réduction de la capacité opérationnelle de l’équipage.
+3. Retard de prise en charge médicale pouvant aggraver la situation.",Incapacité grave nécessitant déroutement ou soins d'urgence,S4,,
+,2,Erreur de pilotage,"1. Perte de contrôle de l’aéronef.
+2. Atterrissage ou décollage non stabilisé.
+3. Sortie de piste ou collision avec un obstacle.","Perte de contrôle en vol, accident avec décès",S5,,
+,3,Intoxication alimentaire à bord,"1. Incapacité simultanée de plusieurs membres d’équipage.
+2. Urgence médicale en vol.
+3. Détérioration de la vigilance et de la performance.","Équipage ou passagers inopérants, impact sur la sécurité en vol",S3,,
+,4,Erreur de saisie du plan de vol,"1. Déviation involontaire de la route prévue.
+2. Conflit de trajectoire avec d'autres aéronefs.
+3. Consommation excessive de carburant ou violation d’espace aérien.",Déviation de trajectoire détectée et corrigée,S2,,
+,5,Mauvais arrimage de la cargaison,"1. Déséquilibre de l’aéronef en vol.
+2. Dommages structurels à la cabine ou au fuselage.
+3. Risque accru lors des phases de décollage ou d’atterrissage.",Déplacement en vol provoquant déséquilibre ou perte de contrôle,S4,,
+,6,Manque de coordination équipage,"1. Exécution incorrecte ou incomplète des procédures.
+2. Confusion dans les responsabilités (PF/PNF).
+3. Réponse inadaptée à une situation d’urgence.",Erreur opérationnelle affectant la sécurité,S3,,
+,7,Omission d’une check‑list critique,"1. Oubli d'étapes essentielles avant décollage ou atterrissage.
+2. Défaillance non détectée d’un système clé.
+3. Non-respect des limitations opérationnelles.","Non-détection d'une configuration incorrecte, pouvant causer un accident",S5,,
+,8,Surcharge de travail de l’équipage,"1. Augmentation du risque d’erreurs humaines.
+2. Diminution de la conscience situationnelle.
+3. Retards dans la prise de décisions critiques.",Fatigue entraînant erreurs mineures,S2,,
+,9,Mauvaise insertion de données FMS,"1. Trajectoire erronée ou non optimale.
+2. Mauvaise gestion de l’altitude ou de la vitesse.
+3. Risque accru de conflit en espace aérien contrôlé.",Erreur de navigation ou performance incorrecte,S3,,
+,10,Fatigue excessive de l’équipage,"1. Réduction des capacités cognitives et motrices.
+2. Allongement du temps de réaction.
+3. Somnolence ou micro-sommeils en vol.",Réduction des capacités cognitives menant à une erreur grave,S3,,
+,11,Erreur dans la lecture du variomètre,"1. Manœuvre inappropriée de montée ou de descente.
+2. Excursion non contrôlée de l'altitude.
+3. Déstabilisation de l'aéronef.",Erreur de trajectoire mineure,S2,,
+,12,Erreur dans l’interprétation du radar météo,"1. Entrée involontaire dans une zone de turbulence sévère.
+2. Dommages à l’appareil dus à des phénomènes météo violents.
+3. Mauvaise anticipation des changements de cap nécessaires.",Entrée non anticipée dans une zone dangereuse,S3,,
+,13,Erreur de suivi de route en espace aérien contrôlé,"1. Violation d’espaces aériens restreints.
+2. Conflit de trajectoire avec d'autres avions.
+3. Intervention d’urgence de l’ATC.",Conflit de trafic potentiel ou infraction,S3,,
+,14,Manque de coordination lors d’une remise de gaz,"1. Excès de vitesse ou mauvaise gestion de la configuration.
+2. Risque de décrochage ou de collision avec le sol.
+3. Perte de contrôle.",Perte de contrôle pendant manœuvre critique,S4,,
+,15,Erreur de lecture de l’altimètre barométrique,"1. Vol à une altitude incorrecte et Conflit de séparation verticale
+2. Collision en vol.
+3. Atterrissage hors des paramètres de sécurité.",CFIT (Collision avec le terrain) potentiel,S4,,
+,16,Perte de conscience d’un membre d’équipage en vol,"1. Augmentation de la charge de travail du coéquipier restant.
+2. Détournement ou retour d'urgence.
+3. Risque de mauvaise gestion des systèmes critiques.","Incapacité de gérer l'avion seul, déroutement nécessaire",S4,,
+,17,Erreur d’interprétation de l’inclinaison en virage,"1. Perte d’assiette de l’aéronef.
+2. Stress structurel ou perte d’altitude.
+3. Désorientation spatiale du pilote.",Perte temporaire de contrôle sans impact matériel,S3,,
+,18,Défaillance d’un copilote dans une procédure standard,"1. Retard dans l’exécution des actions critiques.
+2. Mauvais déroulement d'une approche ou d’un atterrissage.
+3. Charge mentale excessive pour le commandant de bord.","Erreur corrigée par le CDB, pas d'incident",S2,,
+,19,Erreur d’interprétation du vent arrière à l’approche,"1. Approche non stabilisée.
+2. Excès de distance d’atterrissage.
+3. Risque de sortie de piste.",Approche non stabilisée menant à remise de gaz,S3,,
+,20,Distraction de l’équipage par alarme non critique,"1. Oubli ou retard d’actions prioritaires.
+2. Réponse inappropriée à une situation réelle.
+3. Dégradation de la conscience situationnelle.",Perte d’attention sans conséquence grave,S2,,
+,21,Non‑respect des restrictions d’altitude imposées par l’ATC,"1. Perte de séparation et conflit de trajectoire avec un autre aéronef.
+2. Rappel ou sanction par l'autorité aérienne.
+3. Retard dans la séquence d’atterrissage ou de croisière.",Infraction avec risque de conflit de trafic,S3,,
+,22,Manque de coordination entre PNF et PF (Non‑Flying / Flying Pilot),"1. Doublons ou omissions dans les actions.
+2. Mauvais déroulement de procédures critiques.
+3. Activation tardive ou incorrecte d'un système critique (autobrake, PA...)",Erreur de communication menant à manœuvre incorrecte,S2,,
+,23,Erreur de lecture de fréquence radio due à la fatigue,"1. Manque ou retard de communication avec l’ATC.
+2. Mauvaise réception de consignes critiques.
+3. Conflit avec d'autres trafics.",Fréquence incorrecte entraînant mauvaise communication ATC,S2,,
+,24,Manque de sommeil de l’équipage avant le vol,"1. Temps de réaction allongé.
+2. Risque d'endormissement involontaire.
+3. Dégradation de la prise de décision.",Diminution de vigilance sans incident,S2,,
+,25,Stress excessif affectant les décisions en vol,"1. Précipitation dans les actions.
+2. Blocage mental ou mauvaise priorisation.
+3. Mauvaise évaluation des risques.",Décision incorrecte pouvant mettre en jeu la sécurité,S3,,
+,26,Mauvaise communication inter‑équipage,"1. Ordres mal compris ou non exécutés.
+2. Conflit ou confusion dans les rôles.
+3. Mauvaise coordination en situation d’urgence.",Coordination inadéquate menant à erreur bénigne,S2,,
+,27,Oubli de consigne critique en cabine,"1. Risque pour la sécurité des passagers.
+2. Exposition à un danger non signalé (fumée, turbulence…).
+3. Incompréhension entre cabine et cockpit.",Impact potentiel sur sécurité des passagers en cas d'urgence,S3,,
+,28,Erreur de coordination entre cockpit et cabine,"1. Mauvaise exécution d’une évacuation ou alerte.
+2. Retard de réaction en cas d’incident.
+3. Incompréhension sur les priorités de sécurité.",Retard ou confusion lors d'une situation,S2,,
+,29,Décision erronée due à pression commerciale,"1. Décollage ou atterrissage dans des conditions limites.
+2. Non-respect des minima météo ou carburant.
+3. Sous-estimation d’un problème technique.",Poursuite du vol malgré conditions critiques,S4,,
+,30,Confusion entre accélération normale et alarme stall,"1. Réaction inappropriée (ex. : cabrer au lieu de piquer).
+2. Perte de contrôle de l’appareil.
+3. Décrochage non récupéré.",Réaction incorrecte menant à perte de contrôle,S4,,
+,31,Non‑identification d’une panne moteur après le décollage,"1. Perte de puissance non compensée.
+2. Déséquilibre ou dérive de trajectoire.
+3. Crash après décollage.",Crash suite à perte de puissance non gérée,S5,,
+,32,Désaccord non résolu entre CDB et OPL,"1. Décision retardée ou incohérente.
+2. Exécution contradictoire des actions.
+3. Ambiance de travail dégradée.",Mauvaise décision opérationnelle,S3,,
+,33,Instruments divergents non détectés → mauvaise action corrective,"1. Mauvaise gestion de trajectoire ou d’assiette.
+2. Entrée en virage ou descente non intentionnelle.
+3. Perte de référence et désorientation.",Action corrective erronée menant à accident,S5,,
+,34,Affichage d’altitude incorrect après recalage erroné du QNH,"1. Altitude réelle incorrecte par rapport au niveau requis.
+2. Conflit de trafic ou non respect des espaces aériens.
+3. Atterrissage à une altitude non stabilisée.",Erreur d’altitude menant à CFIT,S4,,
+,35,Désactivation du FADEC en plein décollage par erreur,"1. Perte de contrôle des moteurs.
+2. Réduction brutale de poussée.
+3. Interruption de décollage ou crash.",Perte de poussée menant à accident au décollage,S5,,
+,36,Biais de confirmation menant à ignorer une alarme réelle,"1. Absence de réaction face à une panne critique.
+2. Situation non maîtrisée évoluant vers l'accident.
+3. Mauvaise interprétation des signaux de bord.",Incapacité à réagir à une panne réelle,S4,,
+,37,Incapacité à réagir sous stress à une panne critique,"1. Inaction ou réaction inappropriée.
+2. Dégradation rapide de la situation.
+3. Retard dans l’application des procédures.",Accident suite à mauvaise gestion d'urgence,S5,,
+,38,Charge mentale trop élevée → oubli d’une action critique,"1. Mauvaise gestion de la phase de vol.
+2. Non-exécution de procédures importantes.
+3. Accident évitable.",Erreur entraînant défaillance système,S4,,
+,39,Confiance excessive en la mémoire au lieu de suivre la checklist,"1. Étape cruciale oubliée (train, volets…).
+2. Non-détection d’une anomalie.
+3. Réduction de la redondance sécuritaire.",Omission d'une procédure de sécurité essentielle,S3,,
+,40,Vertige spatial en IMC non détecté,"1. Désorientation et manœuvres inappropriées.
+2. Déviation de trajectoire ou perte d’altitude.
+3. Risque de CFIT (Controlled Flight Into Terrain).",Perte de contrôle en vol IMC,S5,,
+,41,Réaction allergique sévère du CDB,"1. Incapacité du commandant.
+2. Détournement d’urgence.
+3. Reprise des commandes par le copilote sans préparation.",Incapacité à continuer le vol,S4,,
+,42,Hypoglycémie en vol longue durée sans repas,"1. Confusion, lenteur cognitive.
+2. Perte de conscience possible.
+3. Erreurs dans la navigation ou procédures.",Réduction des capacités cognitives en vol,S3,,
+,43,Déshydratation causant perte de vigilance,"1. Troubles de l’attention.
+2. Décisions imprécises.
+3. Diminution de la capacité à gérer une situation complexe.",Erreur opérationnelle due à fatigue cognitive,S3,,
+,44,Problème de pression artérielle en altitude de croisière,"1. Malaise ou perte de conscience.
+2. Besoin d’assistance médicale en vol.
+3. Interruption ou déroutement du vol.","Le pilote devient inapte en vol, perte de conscience",S5,,
+,45,Non‑respect des SOPs,"1. Manque de cohérence dans l’action de l’équipage.
+2. Risque de collision, sortie de piste ou mauvaise configuration.
+3.Erreur non détectée par absence de vérification croisée.",Décollage ou atterrissage sans vérification de checklists critiques,S4,,
+,46,Mauvaise lecture des instruments,"1. Mauvaise évaluation de l’altitude ou vitesse.
+2. Réaction non adaptée.
+3. Entrée dans une situation dangereuse.","Altitude mal interprétée en phase d'approche, collision avec le sol",S4,,
+,47,Oubli d’une checklist,"1. Configuration incomplète de l’aéronef.
+2. Systèmes non activés ou mal réglés.
+3. Problème au décollage, croisière ou atterrissage.",Oubli de déploiement des volets avant atterrissage,S3 – Medium,,
+,48,Oubli de configuration de l’appareil pour le décollage,"1. Décollage avec volets ou trim incorrects.
+2. Allongement de la distance de décollage.
+3. Décollage avorté ou instable.","Décollage sans volets -> perte de portance, sortie de piste",S4,,
+,49,Sélection du mauvais aéroport,"1. Approche sur une mauvaise destination.
+2. Atterrissage non autorisé.
+3. Risque de collision ou de confusion avec d'autres trafics.","Atterrissage sur aéroport non prévu, piste trop courte, collision",S4,,
+,50,Sélection de la mauvaise piste,"1. Décollage ou atterrissage avec vent de travers non prévu.
+2. Risque de conflit avec un autre trafic.
+3. Utilisation d’une piste trop courte.",Atterrissage avec vent de travers excessif ou piste non dégagée,S3 – Medium,,
+,51,Activation incorrecte des commandes,"1. Action inappropriée sur volets, trim, freins…
+2. Déséquilibre ou perte de contrôle.
+3. Réponse inadaptée à une situation d’urgence.",Déploiement des freins aériens en montée,S3,,
+,52,Atterrissage trop court,"1. Sortie de piste.
+2. Collision avec obstacle ou infrastructure.
+3. Dommages structurels à l’appareil.","Collision avec les obstacles en bout de piste, dommages structuraux",S4,,
+,53,Décollage avec une charge mal répartie,"1. Problèmes de stabilité et de centrage.
+2. Difficulté de rotation ou montée.
+3. Risque de décrochage.",Décrochage au décollage dû à centrage arrière excessif,S5,,
+,54,Décollage avec masse dépassant les limites,"1. Distance de décollage insuffisante.
+2. Incapacité à atteindre l'altitude de sécurité.
+3. Surcharge structurelle.",L’avion ne parvient pas à décoller et sort de piste à haute vitesse,S5,,
+,55,Perte de contrôle en vol,"1. Décrochage ou vrille.
+2. Collision avec le sol ou un obstacle.
+3. Intervention d’urgence nécessaire.","Perte de contrôle en phase de croisière, entrée en vrille incontrôlable",S5,,
+,56,Perte d’altitude non anticipée,"1. Proximité dangereuse avec le relief.
+2. Violation de la séparation verticale.
+3. Réaction tardive ou inadaptée.",Descente involontaire en zone montagneuse ou densément peuplée,S4 – Élevé,,
+,57,Vitesse trop élevée en approche,"1. Long atterrissage ou remise de gaz nécessaire.
+2. Dépassement des limitations de l’avion.
+3. Usure excessive des freins et pneus.","Atterrissage long, sortie de piste à haute vitesse",S4,,
+,58,Oubli de rétracter le train après le décollage,"1. Surconsommation de carburant.
+2. Vitesse de croisière limitée.
+3. Alarme ou distraction de l’équipage.","Augmentation consommation carburant, panne carburant",S3 – Medium,,
+,59,Mauvaise gestion du carburant,"1. Panne sèche.
+2. Détournement imprévu.
+3. Priorité d’atterrissage non planifiée.","Panne sèche en vol, déroutement forcé ou atterrissage d'urgence",S5 – Extrême,,
+,60,Confusion entre cap et piste,"1. Mauvaise orientation pendant la montée ou l’approche.
+2. Risque de sortie de route.
+3. Perte de repère visuel ou GPS.",Décollage ou atterrissage sur une piste fermée ou incorrecte,S4 – Élevé,,
+,61,Atterrissage sans autorisation,"1. Risque de collision avec trafic au sol.
+2. Sanction de l'autorité aérienne.
+3. Perturbation de la circulation aérienne.",Atterrissage alors qu’un autre appareil est encore sur la piste,S5,,
+,62,Navigation incorrecte (mauvaise route ou cap),"1. Entrée dans un espace aérien restreint.
+2. Conflit avec un autre aéronef.
+3. Signalement à l’ATC pour déviation.",Entrée non autorisée dans un espace aérien militaire ou restreint,S4,,
+,63,Mauvaise gestion de situation d’urgence,"1. Confusion passagère dans le cockpit.
+2. Délai dans l’exécution des procédures d’urgence.
+3. Aggravation de la situation menant à un accident ou crash.","Incapacité à appliquer les procédures incendie moteur, propagation du feu",S5,,
+,64,Interprétation erronée des alarmes,"1. Réaction inutile à une alarme bénigne.
+2. Non-réaction à une alarme critique déguisée.
+3. Panne non traitée entraînant perte de contrôle ou incendie.",Peut mener à une mauvaise réaction à une vraie alerte,S3,,
+,65,Erreur de calcul de performance,"1. Léger dépassement de la vitesse ou distance planifiée.
+2. Décollage ou atterrissage avec marge réduite.
+3. Sortie de piste ou incapacité à décoller.",Peut affecter le décollage ou l’atterrissage,S3,,
+,66,Manque de coordination entre pilotes,"1. Instructions redondantes ou non optimisées.
+2. Erreur dans l’exécution d’une manœuvre complexe.
+3. Collision ou perte de contrôle de l’appareil.",Risque d’erreur critique en vol,S4,,
+,67,Inattention ou distraction,"1. Des erreurs de communication radio.
+2. Oubli d’un élément d’une checklist.
+3. Non-détection d’une panne menant à un incident grave.",Risque d’erreur opérationnelle,S3,,
+,68,Mauvaise interprétation d’une situation normale comme une urgence,"1. Alarme déclenchée sans nécessité.
+2. Remise de gaz ou détour inutile.
+3. Évacuation d’urgence injustifiée avec blessures.",Peut entraîner des procédures inutiles,S2,,
+,69,"Retour prématuré au travail d’un membre d’équipage après une période d’inaptitude (maladie, fatigue, choc émotionnel)","1. Fatigue accrue ou baisse de vigilance en vol.
+2. Mauvais jugement ou erreurs techniques.
+3. Incapacité soudaine en vol nécessitant déroutement.",Peut mener à une mauvaise prise de décision,S4,,
+,70,Distraction liée à l’utilisation non autorisée d’appareils électroniques personnels dans le cockpit,"1. Perte momentanée d’attention.
+2. Mauvaise gestion de la phase de vol (ex. : approche mal préparée).
+3. Sortie de trajectoire ou non-respect d’une consigne ATC.",Altère la conscience situationnelle,S3,,
+,71,Utilisation de la mauvaise version d’un manuel technique ou d’un logiciel de calcul de masse et centrage,"1. Informations mineures incorrectes sans impact immédiat.
+2. Mauvais centrage ou mauvaise configuration de vol.
+3. Risque de décrochage ou surcharge à cause de données erronées.",Peut fausser les données critiques de vol,S3,,
+Opérations de vol,72,Déclaration d’Emergency,"1. Retard à l’arrivée dû à la priorité accordée.
+2. Nécessité d’un déroutement.
+3. Atterrissage d’urgence avec assistance au sol.",Situation critique nécessitant des mesures immédiates,S4,,
+,73,Déplacement de cargaison en vol,"1. Léger déséquilibre perçu dans le pilotage.
+2. Problèmes de centrage affectant la stabilité.
+3. Perte de contrôle en vol.",Peut déséquilibrer l’aéronef et entraîner une perte de contrôle,S5,,
+,74,Impossibilité d’obtenir la configuration planifiée pour une phase de vol,"1. Ajustement mineur du profil de vol.
+2. Remise de gaz ou montée prolongée.
+3. Risque de décrochage ou d’atterrissage instable.",Peut affecter la stabilité ou l’efficacité,S3,,
+,75,Atterrissage de précaution ou atterrissage forcé,"1. Inconfort pour les passagers.
+2. Dommages légers aux structures (volets, pneus…).
+3. Accident avec blessés ou dommages importants.",Situation d’urgence gérée,S4,,
+,76,Contact non intentionnel avec le sol,"1. Avertissement du système GPWS.
+2. Atterrissage dur.
+3. Crash (CFIT – Controlled Flight Into Terrain).",Peut entraîner des dommages graves à l’aéronef,S4,,
+,77,Procédure d’arrêt du décollage après affichage de la poussée de décollage,"1. Usure accrue des freins.
+2. Chauffe des freins ou pneus éclatés.
+3. Sortie de piste à haute vitesse.",Risque de sortie de piste,S3,,
+,78,Sortie de piste ou de chemin de roulage,"1. Inspection obligatoire de l’appareil.
+2. Dommages mineurs (train, pneus, structure).
+3. Immobilisation de l’aéronef et interruption du trafic.",Dommages potentiels à l’avion et blessure possible,S4,,
+,79,Difficultés significatives dans le contrôle de l’avion,"1. Manœuvres compensatoires nécessaires.
+2. Déviation de trajectoire ou instabilité.
+3. Perte de contrôle en vol.",Peut entraîner des effets opérationnels modérés,S2,,
+,80,Erreur de navigation impliquant une déviation significative,"1.Intervention de l’ATC pour recadrage.
+2. Entrée dans un espace aérien non autorisé.
+3. Risque de conflit avec un autre appareil.",Erreur opérationnelle pouvant impacter la sécurité,S2,,
+,81,Erreur de contrôle de l’altitude excédant 200 ft,"1. Alerte de supervision ATC.
+2. Perte temporaire de séparation.
+3. Conflit de trafic / alarme TCAS.",Erreur opérationnelle pouvant impacter la sécurité,S2,,
+,82,Dépassement d’un paramètre limitatif ou changement involontaire de vitesse,"1. Alarme ponctuelle dans le cockpit.
+2. Déstabilisation de la trajectoire.
+3. Dommage structurel (ex. : overspeed flaps).",Peut entraîner des effets opérationnels modérés,S2,,
+,83,Remise de gaz en dessous de la hauteur de décision ou pour cisaillement,"1. Consommation carburant accrue.
+2. Situation stressante pour l’équipage.
+3. Approche ratée avec risque de collision.",Manœuvre non planifiée impactant la sécurité du vol,S3,,
+,84,Atterrissage dur nécessitant vérification des trains,"1. Inspection post-vol nécessaire.
+2. Immobilisation temporaire de l’appareil.
+3. Dommages importants au train d’atterrissage.",Peut endommager le train d’atterrissage,S3,,
+,85,Perte importante de la capacité de freinage,"1. Allongement de la distance de roulage.
+2. Sortie de piste évitée de justesse.
+3. Sortie de piste avec dommages matériels.",Problèmes potentiels de contrôle à l’atterrissage,S3,,
+,86,Évacuation avion,"1. Blessures mineures (écorchures, chutes).
+2. Blessures plus graves (fractures, foulures).
+3. Panique générale, blessés multiples.",Indique une situation d’urgence avec blessure potentielle,S4,,
+,87,Quantité de carburant restante ≤ réserves minimales,"1. Pression accrue sur l’équipage.
+2. Déclaration de PAN PAN ou Emergency.
+3. Panne sèche ou atterrissage en urgence.",Peut entraîner une panne moteur ou un déroutement d’urgence,S4,,
+,88,Alarme TCAS (RA),"1. Déviation mineure de trajectoire.
+2. Manœuvre d’évitement significative.
+3. Risque de quasi-collision.",Risque de collision ou perte de contrôle,S5,,
+,89,Décrochage en vol,"1. Alerte et récupération rapide.
+2. Perte d’altitude significative.
+3. Décrochage non récupéré menant à crash.",Risque de collision ou perte de contrôle,S5,,
+,90,Contact prématuré avec le sol,"1. Atterrissage dur.
+2. Détérioration du train ou des pneus.
+3. CFIT ou collision avec obstacle.",Impact physique pouvant causer des blessures et des dommages,S4,,
+,91,Atterrissage en urgence,"1. Atterrissage non prévu avec assistance.
+2. Dégagement d’urgence de la piste.
+3. Incendie ou explosion à l’atterrissage.",Peut entraîner des effets opérationnels modérés,S2,,
+,92,Activation intempestive du stick shaker,"1. Surprise ou confusion pour les pilotes.
+2. Manœuvre brusque pour corriger.
+3. Perte de contrôle ou surcorrection dangereuse.",Peut entraîner des effets opérationnels modérés,S2,,
+,93,Perte de contrôle en vol,"1. Instabilité momentanée.
+2. Chute de plusieurs milliers de pieds.
+3. Crash de l’aéronef.",Peut entraîner une perte totale de l’avion,S5,,
+,94,Erreur d’inversion de poussée,"1. Freinage inefficace.
+2. Déstabilisation de l’axe de roulage.
+3. Sortie de piste ou collision.",Perte de contrôle moteur ou sortie de piste,S4,,
+,95,Erreur de roulage,"1. Roulage vers une mauvaise bretelle.
+2. Risque de collision au sol.
+3. Collision réelle avec autre trafic.",Collision au sol ou dommages structurels,S2,,
+,96,Déroutement imprévu,"1. Allongement du vol.
+2. Désorganisation du planning opérationnel.
+3. Atterrissage dans un aéroport non préparé.","Impact sur plan de vol, consommation carburant, surcharge équipage",S2,,
+,97,Erreur de configuration de vol,"1. Alerte dans le cockpit.
+2. Décollage ou approche instable.
+3. Accident au décollage ou à l’atterrissage.",Perte de contrôle ou d'efficacité du vol,S3,,
+,98,Rebonds à l’atterrissage,"1. Inconfort passager.
+2. Usure prématurée du train.
+3. Perte de contrôle et sortie de piste.",Atterrissage dur ou sortie de piste,S3,,
+,99,Instabilité longitudinale,"1. Petites corrections de pilotage.
+2. Contrôle difficile de l’assiette.
+3. Décrochage ou oscillation incontrôlée.",Perte de stabilité et difficulté de contrôle,S3,,
+,100,Erreur d’analyse météo,"1. Surprise en vol (turbulences, pluie…).
+2. Entrée dans des conditions défavorables.
+3. Vol en conditions extrêmes menant à un accident.",Décision inappropriée du vol,S2,,
+,101,Erreur de sélection de mode de vol,"1. Fonction non optimisée.
+2. Mauvaise anticipation du profil de vol.
+3. Perte de contrôle automatique ou instabilité.",Engagement d’un mode inadapté,S2,,
+,102,Surutilisation du pilote automatique,"1. Perte d’attention des pilotes.
+2. Non-détection d’une déviation.
+3. Incapacité à reprendre manuellement en urgence.",Dépendance excessive entraînant une mauvaise réaction,S2,,
+,103,Mauvaise tenue de trajectoire,"1. Correction nécessaire par l’ATC.
+2. Non-respect de la SID/STAR.
+3. Entrée dans un espace non autorisé.",Écart par rapport à la trajectoire prévue,S3,,
+,104,Erreurs d’altitude de croisière,"1. Intervention du contrôle.
+2. Violation de séparation verticale.
+3. Alarme TCAS ou quasi-collision.",Vol à mauvaise altitude,S2,,
+,105,Manœuvre brusque non commandée,"1. Surprise ou inconfort passager.
+2. Blessures chez le personnel non attaché.
+3. Perte de contrôle momentanée.",Risque de blessures aux passagers,S2,,
+,106,Refus de décollage pour défaut technique,"1. Retard mineur.
+2. Immobilisation temporaire de l’aéronef.
+3. Annulation du vol et déroutement des passagers.",Incident majeur au sol,S3,,
+,107,Mauvaise sélection de piste à l’atterrissage,"R1. emise de gaz.
+2. Atterrissage non autorisé.
+3. Collision avec trafic ou obstacles.",Risque de collision avec obstacles,S4,,
+,108,Utilisation inappropriée de freins automatiques,"1. Freinage inconfortable.
+2. Distance d’arrêt non optimisée.
+3. Sortie de piste ou usure excessive.",Décélération insuffisante ou inappropriée,S3,,
+,109,Erreur de réglage du trim,"1. Effort accru pour maintenir l’assiette.
+2. Déviation de trajectoire.
+3. Décrochage ou perte de contrôle.",Erreur de centrage ou d’assiette,S2,,
+,110,Excès de vitesse en approche,"1. Approche non stabilisée.
+2. Remise de gaz obligatoire.
+3. Sortie de piste à l’atterrissage.",Excès d’énergie en finale,S2,,
+,111,Instabilité lors de la montée initiale,"1. Ajustement du pilotage nécessaire.
+2. Déviation temporaire de la trajectoire.
+3. Perte de contrôle avec risque de décrochage.",Déséquilibre ou décrochage,S3,,
+,112,Erreur dans la lecture des paramètres moteur,"1. Réaction retardée.
+2. Mauvaise gestion d’une anomalie moteur.
+3. Panne moteur non détectée ou mal gérée.",Erreur de surveillance moteur,S2,,
+,113,Erreur de désactivation du PA,"1. Pilotage manuel soudain non anticipé.
+2. Altération du profil de vol.
+3. Perte de contrôle lors de phase critique.",Changement de mode non anticipé,S2,,
+,114,Sortie de piste sur piste contaminée,"1. Allongement de la distance d’arrêt.
+2. Endommagement mineur de l’appareil.
+3. Immobilisation complète avec dommages majeurs.",Sortie de piste avec collision au sol,S4,,
+,115,Erreur dans l’activation de l’autobrake,"1. Distance d’arrêt légèrement augmentée.
+2. Freinage non optimal nécessitant correction manuelle.
+3. Sortie de piste sur piste courte ou contaminée.",Décélération insuffisante,S3,,
+,116,Erreur de croisière FL inapproprié,"1. Consommation de carburant augmentée.
+2. Non-optimisation de la performance du vol.
+3. Violation d'espacement ou d’espace aérien.",Conflit de trafic ou turbulence,S1,,
+,117,Surconsommation de carburant non détectée,"1. Recalcul de la gestion carburant en vol.
+2. Déroutement obligatoire.
+3. Atterrissage d’urgence carburant faible.",Augmentation de risque de panne,S1,,
+,118,Non‑respect des vitesses (V speeds),"1. Alerte dans le cockpit.
+2. Instabilité de vol pendant montée ou approche.
+3. Perte de contrôle/décrochage.",Erreur pouvant compromettre la montée,S2,,
+,119,Erreur de synchronisation des moteurs,"1. Vibrations ou bruit inhabituel.
+2. Asymétrie de poussée à corriger manuellement.
+3. Dommage moteur ou déviation involontaire.",Perte de synchronisation moteur,S2,,
+,120,Erreur de configuration du mode de montée,"1. Montée moins performante.
+2. Déviation du profil vertical planifié.
+3. Décrochage ou surcharge moteur.",Profil de montée incorrect,S2,,
+,121,Erreur dans le contrôle des volets hypersustentateurs,"1. Alerte dans le cockpit.
+2. Vitesse ou assiette incorrectes.
+3. Endommagement de volets ou perte de contrôle.",Risque de décrochage ou perte de portance,S3,,
+,122,Erreur de saisie du niveau de vol dans le FMS,"1. Correction manuelle après alerte ATC.
+2. Conflit de trajectoire.
+3. Alerte TCAS / violation séparation.",Altitude erronée ou conflit,S2,,
+,123,Activation non intentionnelle des freins au sol,"1. Léger ralentissement.
+2. Instabilité à basse vitesse.
+3. Endommagement du train d’atterrissage.",Freinage intempestif au sol,S3,,
+,124,Erreur d’évaluation de la performance au décollage,"1. Distance de décollage augmentée.
+2. Décollage marginal sous conditions limites.
+3. Décollage interrompu ou sur-run.",Décollage avec performance non atteinte,S4,,
+,125,Erreur de mode de stabilisation de trajectoire,"1. Petites corrections manuelles requises.
+2. Altitude ou cap non maintenus.
+3. Perte de contrôle temporaire.",Perte de guidage en montée,S2,,
+,126,Erreur de suivi de plan de vol automatisé,"1. Déviation mineure corrigée.
+2. Intervention ATC.
+3. Incursion dans espace non autorisé.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,127,Utilisation incorrecte du mode de pilotage automatique,"1. Incohérences mineures dans la trajectoire.
+2. Remise de gaz ou reprise manuelle en urgence.
+3. Perte de contrôle / descente non maîtrisée.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,128,Erreur dans la gestion du carburant en vol,"1. Rééquilibrage manuel.
+2. Activation tardive d’une pompe ou transfert.
+3. Panne carburant moteur / atterrissage forcé.",Risque de panne ou déroutement,S4,,
+,129,"Décollage avec configuration incorrecte (volets, trims)","1. Alerte au décollage.
+2. Performances dégradées.
+3. Décrochage / rejet de décollage.",Risque de perte de contrôle au décollage,S4,,
+,130,Pénétration involontaire dans un espace aérien restreint,"1. Communication avec ATC.
+2. Rapport d’incident requis.
+3. Interception militaire ou sanction réglementaire.",Violation potentielle de l’espace aérien restreint,S3,,
+,131,Erreur de choix de piste au décollage,"1. Doute levé avant l’alignement.
+2. Alignement sur mauvaise piste détecté tardivement.
+3. Décollage depuis mauvaise piste → risque collision.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,132,Déviation non autorisée de la trajectoire en route,"Rappel ATC à la trajectoire.
+
+Entrée dans route contrôlée.
+
+Risque de conflit aérien.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,133,Retard dans la sélection des volets à l’atterrissage,"Approche instable.
+
+Remise de gaz.
+
+Atterrissage dur ou hors paramètre.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,134,Non‑respect des vitesses de référence,"Activation alarme.
+
+Approche instable.
+
+Décrochage ou excès de vitesse.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,135,Erreur de gestion de la poussée en approche,"Vitesse non stabilisée.
+
+Remise de gaz requise.
+
+Atterrissage dur / perte de contrôle.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,136,Échec à intercepter le plan de descente,"Altitude non stabilisée.
+
+Manœuvre pour réintercepter.
+
+Atterrissage hors des paramètres de stabilisation.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,137,Activation accidentelle des volets pendant la croisière,"Augmentation de traînée et consommation.
+
+Vibrations ou bruit structurel.
+
+Dommage structurel ou arrachement volet.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,138,Retard à l’activation des freins au sol après atterrissage,"Distance d’arrêt plus longue.
+
+Surutilisation des freins.
+
+Sortie de piste.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,139,Mauvaise anticipation du freinage en piste mouillée,"Décélération lente.
+
+Aquaplaning contrôlé.
+
+Sortie de piste / collision.",Impact sur le contrôle de l’aéronef au sol,S3,,
+,140,Erreur dans l’utilisation du mode d’altitude automatique,"Altitude incorrecte maintenue.
+
+Intervention manuelle requise.
+
+Perte de séparation / conflit aérien.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,141,Mauvais réglage de la poussée TOGA au décollage,"Montée lente ou instable.
+
+Surconsommation carburant.
+
+Décollage interrompu.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,142,Réduction tardive de la poussée en montée initiale,"Surconsommation.
+
+Excès de bruit / dépassement restrictions.
+
+Surcharge moteur / alarme thermique.
+",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,143,Attente prolongée en holding sans suivi carburant,"Alerte de supervision carburant.
+
+Déroutement nécessaire.
+
+Urgence carburant.",Risque de panne ou déroutement,S4,,
+,144,Mauvais choix de vitesse cible en descente,"Désagrément passagers.
+
+Trajectoire instable.
+
+Survitesse / dommages structuraux.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,145,Retard dans le déclenchement des freins spoilers à l’atterrissage,"Freinage prolongé.
+
+Allongement distance de roulage.
+
+Sortie de piste.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,146,Oubli d’activation de la pompe carburant auxiliaire,"Alerte dans le cockpit.
+
+Répartition de masse perturbée.
+
+Panne carburant moteur.",Risque de panne ou déroutement,S4,,
+,147,Activation intempestive du TOGA en approche,"Remise de gaz inutile.
+
+Incompréhension de la situation.
+
+Risque de collision avec autre trafic.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,148,"Non‑respect des limitations de configuration (volets, train)","Alerte automatique.
+
+Usure prématurée.
+
+Dommage structurel / perte de contrôle.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,149,Mauvais réglage du cap ou de l’altitude sur MCP,"Correction manuelle rapide.
+
+Déviation temporaire.
+
+Conflit de trajectoire / intervention ATC.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,150,Erreur dans le calcul automatique de descente VNAV,"Trajectoire non optimisée.
+
+Remise de gaz.
+
+Descente trop rapide / instabilité.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,151,Vent traversier mal anticipé à l’atterrissage,"Léger déport sur la piste.
+
+Atterrissage avec correction brusque.
+
+Sortie de piste ou dommages train.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,152,Atterrissage avec composante arrière trop élevée,"Distance d’arrêt allongée.
+
+Freinage agressif nécessaire.
+
+Incapacité à s’arrêter / sortie de piste.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,153,Rafale de vent latéral soudaine au flare,"Correction manuelle réussie.
+
+Atterrissage dur avec déséquilibre.
+
+Perte de contrôle ou déport hors piste.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,154,Mode de gestion vertical mal compris → descente prématurée,"Altitude corrigée manuellement.
+
+Entrée dans espace non autorisé.
+
+CFIT ou alarme GPWS.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,155,Reprise manuelle brutale d’un pilotage automatique mal configuré,"Altitude corrigée manuellement.
+
+Entrée dans espace non autorisé.
+
+CFIT ou alarme GPWS.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+ground handling,156, Collision au sol,"Rayure mineure sur le fuselage.
+
+Dommage structurel nécessitant maintenance.
+
+Immobilisation de l’appareil ",Impact physique causant dommages importants ou blessures,S4,,
+,157,Avion mal positionné au parking,"Délai pour repositionnement.
+
+Problème de raccordement des équipements.
+
+Collision potentielle avec obstacle/passerelle.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,158,Problème avec la passerelle d’embarquement,"Attente passagers.
+
+Inconfort ou évacuation via escalier.
+
+Dommages à la porte avion.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,159,Mauvaise indication du marshaller en entrée de parking,"Reprise du guidage.
+
+Arrêt brusque nécessitant repositionnement.
+
+Collision avec obstacle/équipement.",Risque modéré d’erreur de positionnement au sol,S2,,
+,160,Passerelle mobile frappant la porte avion,"Inspection de routine.
+
+Dégâts sur l’étanchéité.
+
+Avion cloué au sol.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,161,Freinage asymétrique à cause de pression irrégulière après repoussage,"Reprise manuelle du freinage.
+
+Déviation légère de trajectoire.
+
+Collision avec équipement/obstacle.",Impact sur le contrôle de l’aéronef au sol,S3,,
+,162,Collision au roulage avec un avion à l’arrêt,"Dommages superficiels.
+
+Inspection obligatoire des deux avions.
+
+Suspension du vol",Impact physique causant dommages importants ou blessures,S4,,
+,163,Oubli d’éléments au sol dans la zone de manœuvre (FOD),"Intervention rapide sans incident.
+
+Ingestion moteur évitée de justesse.
+
+Ingestion moteur / défaillance critique",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,164,Collision entre deux avions en stationnement,"Déclarations d'incident.
+
+Dommages légers nécessitant réparation.
+
+Indisponibilité prolongée des deux avions.",Impact physique causant dommages importants ou blessures,S4,,
+,165,Remplissage excessif de carburant causant un débordement,"Nettoyage immédiat.
+
+Retard au départ.
+
+Risque d’incendie / procédure d’urgence.",Risque de panne ou déroutement,S4,,
+,166,Mauvais positionnement des cônes de sécurité,"Vérification et correction sans impact.
+
+Risque d’intrusion ou mauvaise signalisation.
+
+Collision avec équipement non détecté.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,167,Arrêt d’urgence mal exécuté du tracteur de remorquage,"Reprise manuelle sans dommage.
+
+Légers dommages sur la roue.
+
+Dommages au fuselage ou au train.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,168,Erreur dans la gestion du dégivrage multi‑avions simultané,"Délai sur un des vols.
+
+Application incomplète sur un avion.
+
+Contamination d’un avion au décollage.",Risque de mauvaise préparation de vol,S3,,
+,169,Mauvaise lecture de l'étiquette des conteneurs cargo,"Réajustement à temps.
+
+Erreur dans le chargement.
+
+Problème de centrage / trim en vol.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,170,Défaut de vérification visuelle des pneus avant repoussage,"Inspection avant décollage.
+
+Crevaison détectée au roulage.
+
+Incident au décollage / rejet.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,171,Mauvais raccordement des prises de masse,"Correction rapide.
+
+Risque de surtension.
+
+Court-circuit / blessure personnel.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,172,Sous‑estimation du vent lors de l'arrimage au sol,"Léger déplacement de l’appareil.
+
+Dommage sur un élément mobile.
+
+Renversement équipement / blessure.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,173,Problème de barrière de sécurité,"Détournement de circulation.
+
+Intrusion dans zone de manœuvre.
+
+Collision véhicule/avion.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,174,Intrusion piste,"Alerte radio immédiate.
+
+Suspension trafic temporaire.
+
+Risque collision avion en mouvement.",Risque de collision ou de sortie de piste,S4,,
+,175,Collision avec véhicule au sol,"Éraflure sur nacelle ou porte.
+
+Dommages nécessitant vérification.
+
+Immobilisation de l’avion.",Impact physique causant dommages importants ou blessures,S4,,
+,176,Problème de chargement de passagers,"Désorganisation mineure.
+
+Retard à l’embarquement.
+
+Passager embarqué par erreur → débarquement.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,177,Présence non signalée d’objet en piste,"Récupération sans impact.
+
+Roue endommagée en roulage.
+
+Ingestion moteur / annulation vol.",Risque de collision ou de sortie de piste,S4,,
+,178,Collision sur zone de pushback,"Impact léger.
+
+Inspection nécessaire.
+
+Avion Hors Service / blessure du personnel.",Impact physique causant dommages importants ou blessures,S4,,
+,179,Erreur dans le système de repoussage automatique,"Reprise manuelle.
+
+Avion mal aligné ou positionné.
+
+Collision avec équipement.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,180,Collision entre avion et véhicule de service au sol,"Signalement mineur.
+
+Dommage sur porte ou trappe.
+
+Retrait appareil pour réparation.",Impact physique causant dommages importants ou blessures,S4,,
+,181,Erreur de placement des cales sous les roues,"Mouvement léger de l’avion.
+
+Rupture câble GPU ou PCA.
+
+Avion se déplace dangereusement.
+",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,182,Blessure d’un agent de piste lors du guidage de l’avion,"Soins légers.
+
+Arrêt temporaire d’activité.
+
+Accident du travail grave.",Risque modéré d’erreur de positionnement au sol,S2,,
+,183,Erreur de signalisation lors du pushback,"Confusion de courte durée.
+
+Mauvais timing de lancement moteur.
+
+Collision ou arrêt d’urgence.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,184,Erreur dans le chargement du fret ou des bagages,"Réorganisation avant décollage.
+
+Poids mal réparti.
+
+Décollage avec mauvais centrage.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,185,Cargaison non arrimée correctement,"Alerte pendant roulage.
+
+Déplacement détecté en vol.
+
+Perte de contrôle ou dégâts structurels.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,186,Erreur humaine lors du dégivrage au sol,"Surconsommation fluide dégivrant.
+
+Zone non traitée.
+
+Décollage avec aile contaminée.",Risque de mauvaise préparation de vol,S3,,
+,187,Dommage au fuselage causé par un tracteur de pushback,"Éraflure nécessitant vérif.
+
+Bosselure structurelle.
+
+Fuselage endommagé → avion immobilisé.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,188,Ereur de conduite du GPU (groupe de puissance au sol),"GPU hors service.
+
+Surcharge système électrique avion.
+
+Court-circuit → alarme cockpit.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,189,Mauvais positionnement de l’escalier ou du “finger”,"Attente pour repositionner.
+
+Inconfort pour passagers.
+
+Porte avion endommagée.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,190,Erreur de connexion ou de déconnexion du système PCA (air conditionné au sol),"Cabine non climatisée.
+
+Alarme de température cabine.
+
+Surchauffe équipements critiques.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,191,Fermeture incorrecte des portes de soute,"Alerte avant décollage.
+
+Retour au parking.
+
+Porte arrachée / décompression.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,192,Glissade d’un agent de piste sur surface contaminée,"Chute sans blessure.
+
+Entorse / arrêt de travail.
+
+Blessure grave → hospitalisation.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,193,Utilisation d’équipement de manutention non conforme,"Réaffectation matériel.
+
+Mauvais appui / déséquilibre.
+
+Rupture / dommage structure avion.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,194,Erreur de guidage par baliseur au sol,"Correction rapide.
+
+Mauvais alignement parking.
+
+Collision.",Risque modéré d’erreur de positionnement au sol,S2,,
+,195,Collision entre deux équipements au sol à proximité de l’avion,"Arrêt opérationnel temporaire.
+
+Retard handling.
+
+Explosion ou blessure.",Impact physique causant dommages importants ou blessures,S4,,
+,196,Détérioration des pneus par freinage brutal au sol,"Inspection avant départ.
+
+Changement pneu.
+
+Crevaison en roulage.",Impact sur le contrôle de l’aéronef au sol,S3,,
+,197,Erreur d’utilisation du système de dégivrage mobile,"Fluide mal distribué.
+
+Reprise manuelle.
+
+Dégivrage incomplet → décollage à risque.",Risque de mauvaise préparation de vol,S3,,
+,198,Utilisation inappropriée de feux de signalisation au sol,"Confusion équipe sol.
+
+Interruption roulage.
+
+Collision évitable.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,199,Erreur dans l’affichage de la passerelle télescopique,"Dysfonctionnement passager.
+
+Immobilisation passerelle.
+
+Porte avion endommagée.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,200,Erreur de configuration du circuit d’air PCA au sol,"Mauvais flux d’air.
+
+Surchauffe ou froid cabine.
+
+Dommage système de régulation avion.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,201,Connexion erronée des câbles de puissance au sol,"Coupure d’alimentation.
+
+Court-circuit.
+
+Incendie équipement.",Événement au sol ou mineur affectant la sécurité opérationnelle,S2,,
+,202,Erreur d’identification de l’avion par le personnel au sol,"Doute levé rapidement.
+
+Mauvais équipement acheminé.
+
+Dégivrage ou chargement sur mauvais avion.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+,203,Erreur de manipulation d’un extincteur au sol,"Décharge sans raison.
+
+Brûlure légère agent.
+
+Contamination équipement avion.",Erreur humaine impactant la sécurité ou l’efficacité,S2,,
+communication/navigation,204,Panne ou difficulté de communications radio,"1. Retard dans les échanges ATC.
+2. Nécessité d’utiliser des procédures de sauvegarde (transpondeur – code 7600).
+3. Entrée non autorisée ou quasi-collision faute de coordination.","Perte de séparation avec autre trafic, risque de collision",S4,,
+,205,Perte de communication avec l’équipage de cabine,"1. Message de service retardé aux passagers.
+2. Difficulté à gérer un incident cabine sans guidance cockpit.
+3. Mauvaise gestion d’une évacuation ou d’un problème médical.",Mauvaise coordination entraînant une évacuation d’urgence,S2,,
+,206,Mauvais réglage du sélecteur COM (parler sur la mauvaise radio),"1. Perte temporaire d’ATC local.
+2. Confusion entre fréquences en environnement dense.
+3. Aucune instruction reçue pour une phase critique → risque grave.","Message critique envoyé sur mauvaise fréquence, mauvaise réaction ATC",S3,,
+,207,Erreur dans la transmission du squawk transpondeur,"Alerte sur conflit d’identification.
+
+Correction tardive après interrogation radar.
+
+Perte de ségrégation et risque de collision.","Transpondeur non détecté, interception par chasseurs",S3,,
+,208,Erreur de sélection du mode NAV ou HDG,"Petite déviation de trajectoire corrigée manuellement.
+
+Entrée décalée sur SID/STAR avec remontée de paramétrage.
+
+Ingestion de trafic ou entrée non autorisée dans un corridor.","Navigation incorrecte, déviation en espace aérien dangereux",S3,,
+,209,Erreur dans le calcul automatique de descente VNAV,"Ajustement manuel léger du profil de descente.
+
+Approche instable nécessitant remise de gaz.
+
+Descente trop rapide hors de contraintes → CFIT possible.",Descente imprévue en zone montagneuse,S3,,
+,210,Reprogrammation tardive du FMS en approche,"Correction hâtive des caps/vitesses.
+
+Processus de briefing désorganisé avec l’ATC.
+
+Mauvaise stabilisation finale → atterrissage dur ou sortie de piste.","Approche instable, remise de gaz d’urgence",S2,,
+,211,Mauvais engagement du mode LNAV lors d’une SID,"Légère correction manuelle de cap.
+
+Violation de contrainte airspace ou altitude.
+
+Conflit de trajectoire sévère entraînant RA TCAS.","Départ SID erroné, conflit avec autre trafic",S3,,
+,212,Défaut de communication entre le marshaller et la tour,"Reprise du guidage via radio portable.
+
+Stationnement retardé et décalage planning.
+
+Collision au parking ou intrusion sur zone active.","Absence de coordination au sol, collision avec véhicule",S3,,
+,213,Fréquences saturées empêchant le contact avec ATC,"Longue attente avant réponse.
+
+Perte de ségrégation temporaire dans l’approche finale.
+
+Exécution incorrecte de clearances → incident grave.",Perte de contact ATC en phase critique de vol,S2,,
+,214,Perte temporaire du signal ADS‑B en espace non radar,"Détection tardive de la position par ATC.
+
+Application de procédures RNP ou PBN manuelles.
+
+Violation de séparation → manœuvre d’évitement urgente.","Perte de suivi radar, impossibilité de suivi de trajectoire",S2,,
+,215,Incohérence entre données radar et navigation inertielle,"Alerte sur divergence de position.
+
+Recalage manuel courant de vol.
+
+Conflit ATC ou quasi-collision en croisière.","Navigation imprécise, vol hors trajectoire autorisée",S2,,
+,216,Oubli de passage en mode approche sur le FMS,"Sélection tardive des minima.
+
+Briefing perte de références altimétriques.
+
+Atterrissage hors paramètres → remise de gaz ou sortie de piste.","Non-activation mode approche, atterrissage non stabilisé",S2,,
+,217,Langage non standard utilisé dans la communication ATC,"Clarification demandée par l’ATC.
+
+Temps de réaction accru à une instruction.
+
+Mauvaise exécution d’une clearance critique.","Incompréhension ATC, autorisation erronée",S1,,
+,218,Problème d’alignement de piste,"Correction visuelle avant l’atterrissage.
+
+Circulation remise de gaz inutile.
+
+Atterrissage sur obstacle ou collision avec véhicule.","Alignement sur mauvaise piste, risque de collision",S2,,
+,219,Dérive de navigation GPS,"Recentrage sur repère VOR/DME.
+
+Inadéquation au plan de vol → rapport FPL.
+
+Entrée non détectée dans un espace restreint.","Déviation de trajectoire, risque d’espace restreint",S2,,
+,220,Problème de radar météo,"Pas d’affichage de cellules convectives mineures.
+
+Navigation détournée pour éviter zones orageuses.
+
+Entrée non anticipée en zone de turbulence sévère.","Mauvaise anticipation météo, vol dans orage",S2,,
+,221,Communication altérée par interférences,"Bruit de fond gênant.
+
+Répétition d’instructions multiple→ surcharge.
+
+Perte totale du message → exécution incorrecte en phase critique.","Perturbation de communication ATC, erreur de guidage",S1,,
+,222,Perte de données radar secondaire,"ATC passe en mode primaire uniquement.
+
+Augmentation des séparations verticales.
+
+Perte de ségrégation → RA TCAS.","Panne de suivi radar, conflit non détecté",S2,,
+,223,Coupure d’un axe de communication,"Passage obligatoire sur un autre COM/VHF.
+
+Usage de procédure de détresse (transmission sur guard).
+
+Aucune coordination – vol en aveugle potentiellement fatal.",Impossibilité d’instruction ATC urgente,S2,,
+,224,Erreur de fréquence radio,"Faible volume ou mauvaise réception.
+
+Contact avec la mauvaise cellule ATC.
+
+Aucune clearance reçue – violation d’espace aérien.","Communication erronée avec le contrôle aérien, entraînant un conflit de trajectoire avec un autre aéronef.",S3,,
+,225,Erreur de sélection de balise,"Navigation VOR/DME non optimale.
+
+Recâblage manuel requis.
+
+Entrée non autorisée en zone TMA/TR.","Navigation vers un point incorrect, menant à une déviation significative de la route prévue.",S3,,
+,226,Erreur dans les fréquences météo,"Données rate retardées.
+
+Briefing météo incomplet.
+
+Entrée en orage non détecté → risque structurel.","Ignorance de conditions météorologiques dangereuses, causant une traversée imprévue de zone de turbulence ou orageuse.",S3,,
+,227,Erreur d’identification de trafic proche,"Alerte TCAS détournée pour autre cible.
+
+Retard de manœuvre d’évitement.
+
+Collision en vol ou intervention militaire.","Non-évitement d'un trafic convergent à cause d'une mauvaise identification, menant à un risque de collision en vol.",S3,,
+,228,Erreur de transmission de données ACARS,"Message différé arrivé au sol après vol.
+
+Briefing maintenance incomplet.
+
+Mauvaise détection d’un défaut critique en vol.","Perte de mise à jour critique de plan de vol, induisant des erreurs de navigation et de carburant.",S3,,
+,229,Erreur dans l’alignement inertiel,"Recalage via repères visuels au sol.
+
+Navigation PBN altérée → rapport d’écart.
+
+CFIT hors zone radar.","Navigation totalement décalée dès le départ, compromettant la trajectoire prévue dès la montée initiale.",S3,,
+,230,Perte de fonction d’un système de navigation inertielle,"Passage en mode dégradé LNAV.
+
+Augmentation des séparations minima.
+
+Vol contourné – déroutement obligatoire.","Perte de navigation autonome en zone non radar, compromettant le positionnement de l’aéronef.",S2,,
+,231,Défaut de communication entre le personnel de piste et l’équipage,"Coordination du pushback retardée.
+
+Mauvais timing de démarrage moteur.
+
+Collision pushback ou blessure agent.",Mauvaise indication lors du roulage causant une incursion piste ou collision au sol.,S3,,
+,232,Mauvaise programmation du FMS,"Correction manuelle de cap/altitude.
+
+Remise de gaz ou un tour supplémentaire.
+
+Entrée dans un corridor non autorisé.",Plan de vol erroné conduit à une descente prématurée ou montée non coordonnée.,S3,,
+,233,Communication radio non conforme en espace aérien contrôlé,"Avertissement ATC et rappel des procédures.
+
+Fonctionnement limité en CPDLC/VDL.
+
+Sanction réglementaire et vol immobilisé.
+",Violation des instructions ATC provoquant un conflit de trafic ou interception militaire.,S2,,
+environnement,234,Collision aviaire ou avec objet étranger,"Dommages superficiels à une aile ou un capot moteur.
+
+Arrêt pour inspection et nettoyage des réacteurs.
+
+Panne moteur en vol nécessitant déroutement d’urgence.",Impact avec oiseaux ou objet à haute vitesse entraînant la perte d’un moteur en montée initiale.,S4,,
+,235,Intrusion d’un animal sur la piste,"Freinage brusque sans dommage.
+
+Remise de gaz ou évitement avec risque de remise de gaz.
+
+Collision à vitesse élevée entraînant sortie de piste.",Collision à grande vitesse avec un animal lors du décollage ou de l’atterrissage entraînant un rejet de décollage d’urgence.,S3,,
+,236,Poussière désertique causant abrasion des surfaces vitrées,"Légère baisse de la visibilité externe.
+
+Besoin de nettoyage ou de remplacement de pare-brise avant vol suivant.
+
+Défaillance catastrophique de la vision pilote en phase critique (atterrissage).","Perte de visibilité critique pour les pilotes, surtout en phase d’approche finale en visibilité réduite.",S2,,
+,237,Collision aviaire,"Aplatissement mineur d’une pale de soufflante.
+
+Vérification et équilibrage des arbres rotor avant remise en service.
+
+Perte de poussée d’un moteur et atterrissage d’urgence.",Impact d’oiseaux dans le moteur provoquant une panne moteur en vol.,S4,,
+,238,Choc avec un drone,"Alerte GPWS/TCAS sans dommage visible.
+
+Dommages légers à une nacelle ou un empennage.
+
+Perforation de la cellule entraînant dépressurisation partielle.","Impact avec le pare-brise ou moteur, perte partielle ou totale de contrôle de l’aéronef.",S4,,
+,239,Éblouissement par soleil rasant,"Inconfort visuel passager temporaire.
+
+Baisse de la précision des manœuvres pendant quelques instants.
+
+Décrochage involontaire ou collision terrain (CFIT).
+","Perte visuelle momentanée lors d’un atterrissage de précision, causant sortie de piste.",S2,,
+,240,Blocage du train d’atterrissage par corps étranger au sol,"Alerte d’anomalie au train (avertisseur sonore).
+
+Rejet d’atterrissage ou atterrissage forcé sur train principal seul.
+
+Effondrement du train et dégâts structurels majeurs.",Train non verrouillé en position ouverte menant à atterrissage sur le fuselage.,S2,,
+,241,Contamination de la piste par huile ou carburant,"Adhérence légèrement réduite au freinage.
+
+Aquaplaning localisé ou dérapage contrôlé.
+
+Sortie de piste avec rupture de structure.",Sortie de piste à l’atterrissage due à faible adhérence non signalée.,S2,,
+,242,Présence de débris métalliques sur l’aire de stationnement,"Inspection FOD avant repoussage.
+
+Crevaison lente d’un train lors du roulage.
+
+Perforation d’un réservoir ou d’un circuit hydraulique.",Crevaison ou dommage à une roue entraînant accident de repoussage ou roulage.,S2,,
+,243,Pollution visuelle due à des incendies de forêt,"Transport de particules dans la cabine (inconfort passager).
+
+Modification de la route pour éviter zone enfumée.
+
+Perte de référence visuelle en approche VFR → remise de gaz.","Perte de références visuelles, provoquant désorientation spatiale en approche.",S1,,
+,244,Vol de cendres volcaniques non signalé,"Opacité du pare-brise nécessitant essuie-glaces fréquents.
+
+Endommagement progressif des sondes Pitot et des moteurs.
+
+Défaillance moteur multiple et crise de panne en vol.",Aspiration de cendres causant panne multiple des moteurs à haute altitude.,S2,,
+,245,Éclatement de pare‑brise causé par impact de glace,"Fissure superficielle sans perte de visibilité.
+
+Remplacement du pare-brise avant continuation du vol.
+
+Perforation complète entraînant dépressurisation.",Décompression explosive et perte de visibilité à haute altitude.,S4,,
+,246,Impact d’un ballon météorologique à haute altitude,"Alerte collision avionique sans panne fonctionnelle.
+
+Dommages à une antenne ou sondes externes.
+
+Perte de systèmes de navigation ou pressurisation.","Dommage à une antenne critique ou système de navigation, induisant perte partielle de contrôle ou panne.",S4,,
+,247,Vol d’oiseaux stationné près du seuil non dispersé par tour,"Présence d’oiseaux éloignée avant décollage (retard minime).
+
+Passage en surveillance accrue GPWS/TCAS au décollage.
+
+Frappe multiple d’oiseaux entraînant panne moteur multiple.",Collision à faible altitude au décollage avec ingestion moteur.,S2,,
+documentation/procédure,248,Déficiances dans les procédures opérationnelles ou manuels,"Confusion ponctuelle dans l’application d’une procédure.
+
+Exécution partielle ou erronée d’une checklist.
+
+Action inappropriée menant à un incident en vol.","Application incorrecte d’une procédure d’urgence en vol, aggravant la situation.",S2,,
+,249,Erreur dans la répartition du poids en soute,"Léger déséquilibre perceptible au roulage.
+
+Ajustement du trim en vol pour compenser.
+
+Décrochage en montée ou sortie de piste.","Décollage avec centrage arrière, causant instabilité au nez lors de la rotation.",S3,,
+,250,Mauvais équilibrage de la cargaison,"Légère correction de centrage avant rotation.
+
+Limitation de performance en montée.
+
+Perte de contrôle ou décrochage.",Perte de contrôle longitudinal au roulage ou en montée initiale.,S3,,
+,251,Erreur de lecture de la documentation QRH,"Temps supplémentaire pour retrouver la bonne référence.
+
+Exécution incomplète d’une procédure d’urgence.
+
+Mauvaise réaction à un moteur en feu.",Mauvaise application d'une procédure d’urgence causant aggravation de la situation (ex. feu moteur).,S3,,
+,252,Rétention de défauts dans la MEL alors qu’ils nécessitaient une action immédiate,"Alerte de maintenance repoussée au vol suivant.
+
+Dégradation d’un système pendant le vol.
+
+Panne critique en route nécessitant déroutement.","Départ avec une panne critique ignorée, aggravant le problème en vol.",S3,,
+,253,Répartition irrégulière des charges causant un nez trop lourd,"Sensation de tangage vers le bas au décollage.
+
+Réduction de la vitesse de montée.
+
+DCOL (Decision to Continue On Landing) rejeté ou crash.","Roulage difficile, incapacité à effectuer la rotation.",S2,,
+,254,Plan de vol approuvé malgré météo contraire,"Modification mineure de l’altitude en route.
+
+Remise de gaz ou déroutement partiel.
+
+Entrée dans conditions orageuses → incident grave.",Traversée de cellule orageuse entraînant une perte de contrôle ou dommages structurels.,S2,,
+,255,Mauvaise gestion du retour d’expérience d’un incident,"Reprise tardive d’une bonne pratique.
+
+Répétition d’une même erreur sur un autre vol.
+
+Accident comparable non évité.",Répétition d’un incident évitable causant un accident similaire.,S3,,
+,256,Changement de procédure non communiqué à l’équipage,"Questionnement de l’équipage en vol.
+
+Application de l’ancienne procédure au mauvais moment.
+
+Mise en danger lors d’un évitement météo.
+","Utilisation d’une procédure obsolète, induisant une descente prématurée ou mauvaise configuration d’approche.",S2,,
+,257,Erreur de traduction d’un manuel d’utilisation,"Lecture forcée avec doute sur un terme technique.
+
+Mauvaise exécution d’une réinitialisation système.
+
+Mauvaise configuration entraînant une perte de systèmes.",Mauvaise configuration d’un système ou une mauvaise réponse à une alarme.,S3,,
+,258,Erreur dans le remplissage de la MEL (Minimum Equipment List),"Détection tardive d’un équipement inopérant.
+
+Vol effectué sans une redondance critique.
+
+Défaillance d’un système essentiel en vol.",Autorisation erronée de vol avec système critique non opérationnel.,S3,,
+,259,Documentation technique obsolète utilisée,"Instructions légèrement différentes sans impact.
+
+Application d’une procédure non adaptée à l’appareil.
+
+Panne non gérée selon la bonne check-list → incident.",Maintenance incorrecte causant panne en vol ou défaillance technique.,S2,,
+,260,Erreur dans la préparation du plan de vol,"Correction rapide avant roulage.
+
+Ajustement en vol via ATC.
+
+Déviation d’espace aérien contrôlé → conflit.",Trajectoire conflictuelle avec autre trafic ou espace aérien restreint.,S3,,
+,261,Oubli de réglage du QNH avant le décollage,"Altitude affichée décalée de quelques dizaines de pieds.
+
+Correction manuelle en croisière.
+
+Violation de séparation verticale → RA TCAS.","Altitude erronée non conforme aux autres trafics, causant conflit.",S2,,
+,262,Erreur dans la check‑list de démarrage moteurs,"Temps de démarrage légèrement allongé.
+
+Un moteur non démarré détecté tardivement.
+
+Démarrage asynchrone menant à repas d’urgence.",Oubli d’activation de systèmes critiques entraînant un arrêt moteur au décollage.,S3,,
+,263,Non‑respect du brief de sécurité en cabine,"Répétition partielle des consignes par l’équipage.
+
+Confusion des passagers lors d’une évacuation.
+
+Blessures graves lors d’une véritable évacuation.",Mauvaise coordination entre PNC et PNT lors d’une évacuation d’urgence.,S2,,
+,264,Omission de procédure d’approche stabilisée,"Phase finale non parfaitement alignée.
+
+Remise de gaz à hauteur de décision.
+
+Atterrissage dur ou sortie de piste.",Atterrissage non stabilisé causant sortie de piste ou remise de gaz en conditions limites.,S3,,
+,265,Erreur dans l’établissement du niveau de transition,"Réglage du QNH effectué tardivement.
+
+Altitude corrigée sous la tour ATC.
+
+Violation de contrainte altimétrique → conflit.",Vol à altitude incorrecte causant conflit avec trafic opposé.,S3,,
+,266,Omission du test des alarmes avant décollage,"Signal d’alarme non entendu lors d’une phase non critique.
+
+Réaction retardée à une alarme ensuite.
+
+Système défaillant non détecté entraînant crash.","Départ avec un système de détection non fonctionnel, retardant la détection d’un incident.",S3,,
+,267,Procédure d’arrêt du décollage,"Rejet de décollage sans délai.
+
+Usure supplémentaire des freins.
+
+Sortie de piste en cas de freinage tardif.",Décision tardive provoquant dépassement de piste et sortie de piste.,S2,,
+,268,Dépassement de la masse maximale au décollage,"Alerte plancher FMS.
+
+Performances dégradées en montée.
+
+Incapacité à atteindre altitude de sécurité.","Performance de montée insuffisante, incapacité à dégager les obstacles en cas de panne moteur.",S4,,
+,269,Problème de centrage,"Ajustement de trim avant essais.
+
+Correction manuelle de l’assiette.
+
+Décrochage ou perte de contrôle.",Perte de contrôle au décollage due à un déséquilibre majeur.,S2,,
+,270,Mauvais carburant,"Légère baisse de performance moteur.
+
+Stabilisation de moteur incertaine.
+
+Arrêt moteur en vol → déroutement d’urgence.",Arrêt moteur en vol causé par contamination ou carburant inadapté.,S3,,
+,271,Erreur de calcul de performance,"Départ avec marge carburant réduite.
+
+Réduction des vitesses cible.
+
+Décrochage ou incapacité à décoller.","Distance de décollage insuffisante, sortie de piste.",S3,,
+,272,Fermeture incorrecte d’une porte,"Alerte de pressurisation en cabine.
+
+Retour au parking pour vérification.
+
+Perte de dépressurisation en vol.","Dépressurisation en vol, nécessitant descente d’urgence.",S2,,
+,273,Erreur de répartition carburant,"Asymétrie mineure de masses.
+
+Rééquilibrage manuel en vol.
+
+Panne moteur pour carburant épuisé sur un réservoir.",Déséquilibre carburant causant déséquilibre en vol ou panne moteur d’un côté.,S3,,
+,274,Erreur dans le calcul du centrage,"Centrage hors limites minimes.
+
+Ajustement via ballast ou répartition.
+
+Perte de contrôle latéral.",Perte de contrôle à basse vitesse (rotation ou flare).,S3,,
+,275,Oubli de retirer les protections de sonde Pitot,"Alerte de vitesse anormale sur l’EICAS.
+
+Descente manuelle sous indicateur fiable.
+
+Perte de données vitesse → CFIT.","Indications de vitesse erronées, menant à décrochage ou survitesse.",S2,,
+,276,Échec de validation du plan de vol alternatif,"Briefing approché plus long.
+
+Plan B recalculé en vol.
+
+Absence de plan alternatif en cas de déroutement.",Aucune option de déroutement en cas d’urgence carburant ou météo.,S2,,
+,277,Problème d’interprétation des courbes de performance,"Ajustement du plan de vol simple.
+
+Réévaluation des limites en vol.
+
+Décrochage ou surpoussée moteur.","Décollage avec paramètres inadaptés, causant dépassement V1 ou panne.",S2,,
+,278,Erreur dans la configuration de décollage,"Alerte dans le cockpit (volets/trim).
+
+Rejet de décollage.
+
+Décrochage proche du sol.","Position volets ou trim incorrecte, menant à un rejet de décollage tardif.",S3,,
+,279,Erreur dans les limitations de vent,"Légère turbulence non anticipée.
+
+Remise de gaz pour conditions limites.
+
+Perte de contrôle en vent de travers fort.","Décollage ou atterrissage par vent dangereux, causant perte de contrôle.",S3,,
+organisation/gestion,280,Dégradation des standards opérationnels,"Érosion progressive de la qualité des procédures.
+
+Multiplication des écarts non recensés menant à des audits plus fréquents.
+
+Effondrement du niveau de sécurité avec accidents ou incidents graves.",Accumulation d’erreurs conduisant à un accident évitable.,S2,,
+,281,Manque de coordination interservices,"Retards ponctuels dans le traitement des demandes.
+
+Conflits de responsabilités générant des procédures contournées.
+
+Défaillance globale du système conduisant à une crise opérationnelle.","Oubli de vérification technique avant vol, menant à incident.",S2,,
+,282,Mauvaise coordination entre deux FIR voisins,"Instructions ATC redondantes ou contradictoires nécessitant des clarifications.
+
+Délai dans le relais d’informations de trafic, entraînant un nivellement non optimal.
+
+Violation de séparation avec quasi-collision ou collision en vol.","Perte de séparation dans la zone de transfert, conflit de trajectoire.",S3,,
+,283,Plan de vol approuvé malgré météo contraire,"Ajustement de la route via ATIS / NOTAM pendant le vol.
+
+Déroutement ou remise de gaz inopinés augmentant la charge de travail.
+
+Entrée dans des conditions extrêmes provoquant un incident majeur.",Maintenance incorrecte causant panne moteur ou défaillance critique.,S2,,
+,284,Mauvaise gestion du retour d’expérience d’un incident,"Documentation d’un incident sans diffusion aux équipes.
+
+Répétition de la même erreur sur plusieurs vols, causant des incidents récurrents.
+
+Accident grave identique non évité faute de leçons apprises.","Absence de déroutement planifié, atterrissage en condition critique.",S3,,
+,285,Sous‑traitance de maintenance à une société peu qualifiée,"Interventions plus lentes et contrôles supplémentaires requis.
+
+Défauts non détectés menant à pannes en service.
+
+Accident en vol lié à une maintenance inappropriée.","Décollage ou atterrissage sans freinage efficace, sortie de piste.",S2,,
+défaut d'infrastructure,286,Fermeture de terrain en urgence,"Détournement des vols vers un autre aérodrome.
+
+Saturation temporaire des capacités de l’aéroport de déroutement.
+
+Retards et annulations en cascade sur le réseau.",Collision avec un objet ou un avion lors du roulage.,S2,,
+,287,Contamination de la piste,"Réduction de l’adhérence au freinage.
+
+Besoin de nettoyage et interruption du trafic.
+
+Sortie de piste lors de l’atterrissage ou du décollage.",Atterrissage en mauvaise piste ou sortie de piste en basse visibilité.,S2,,
+,288,Problème de guidage au sol,"Roulage ralenti et ajustements manuels.
+
+Risque de confusion de trajectoire entre taxiways.
+
+Collision au sol avec un autre aéronef ou un véhicule.",Absence d’aérodrome de dégagement disponible à l’arrivée.,S2,,
+,289,Déficience de l’éclairage d’approche,"Augmentation de la charge de travail pilotes en vision réduite.
+
+Impossibilité d’atterrir de nuit sans aide supplémentaire.
+
+Remise de gaz ou déroutement vers un aéroport équipé.","Atterrissage en piste inadaptée, provoquant dépassement ou sortie de piste.",S2,,
+,290,Fermeture prématurée d’un aéroport,"Dernier vol retardé ou dérouté postérieurement.
+
+Surcharge des services de bus ou navettes pour passagers.
+
+Annulation de plusieurs rotations et impact sur le planning.",Hydroplanage à l’atterrissage causant sortie de piste.,S2,,
+,291,Utilisation d’aérodrome non homologué,"Manque d’assistance au sol et de services minimums.
+
+Risque de non-conformité aux procédures de sécurité.
+
+Incident grave dû à l’absence d’infrastructure adaptée.",Dommage au train d’atterrissage ou aux pneus à l’atterrissage ou roulage.,S2,,
+,292,Défaut de drainage des eaux de pluie,"Formation de flaques et aquaplaning localisé.
+
+Détérioration accélérée du revêtement de piste.
+
+Fermeture prolongée pour réparations majeures.",Mauvaise manœuvre au sol en condition de nuit ou brouillard.,S3,,
+,293,Dégradation ou casse du matériel de piste,"Retard de la prochaine rotation le temps d’évacuer les débris.
+
+Besoin d’intervention d’urgence des équipes de maintenance.
+
+Impression d’un segment fermé, reprogrammation des décollages/atterrissages.",Collision lors de l’approche au parking ou blessure au personnel.,S2,,
+,294,Panne du système de marquage lumineux d’aire de trafic,"Roulage à vitesse réduite avec escorte de suivi.
+
+Mise en place de balisage temporaire au sol.
+
+Arrêt complet des mouvements de nuit jusqu’à réparation.",Décollage ou atterrissage sur mauvaise piste ou taxiway.,S4,,
+,295,Mauvais fonctionnement du système d’éclairage de passerelle,"Embarquement/débarquement ralenti.
+
+Utilisation d’escaliers mobiles avec protocole manuel.
+
+Risque de blessures passagers et suspension temporaire de l’équipement.","Perte de contrôle au roulage, sortie de piste ou collision.",S3,,
+,296,Signalisation visuelle manquante ou erronée sur la piste,"Doubles vérifications pilotage visuel.
+
+Rallongement de la distance de roulage et d’attente.
+
+Incursion à risque et collision potentielle.","Erreur de taxi, incursion piste ou collision.",S2,,
+,297,Roue cassée sur un taxiway mal entretenu,"Immobilisation temporaire en position.
+
+Remorquage d’urgence vers aire de maintenance.
+
+Annulation du vol pour remplacement du train d’atterrissage.","Aquaplanage au roulage, difficulté de freinage ou déviation de trajectoire.",S2,,
+,298,Défaut d’éclairage de taxiway la nuit,"Roulage à vue avec escorte véhicule.
+
+Risque de sortie de taxiway sur zone non balisée.
+
+Arrêt complet des vols nocturnes jusqu’à rétablissement.","Approche guidée vers un point incorrect, risque de CFIT.",S3,,
+,299,Présence d’eau stagnante non signalée après fortes pluies,"Freinage moins efficace en zone affectée.
+
+Aquaplaning et légère déviation de trajectoire.
+
+Sortie de taxiway ou sortie de piste en roulage.",Erreur de trajectoire lors de l’atterrissage ou du roulage.,S2,,
+,300,Indication ILS incorrecte due à interférences terrain,"Alerte GPWS ou alarme minima atteints prématurément.
+
+Approche instable nécessitant remise de gaz.
+
+CFIT ou sortie de piste en condition de faible visibilité.",Erreur de roulage menant à incursion piste ou collision au sol.,S2,,
+,301,Mauvais état du balisage lumineux,"Légère confusion visuelle pour le positionnement.
+
+Roulage ralenti et recours à l’éclairage mobile.
+
+Suspension des mouvements de nuit jusqu’à maintenance.",Aucun dommage ni blessure,S3,,
+,302,Mauvaise signalisation au sol,"Décalage mineur de positionnement au parking.
+
+Correction manuelle par recours à la radio.
+
+Collision véhicule-avion ou avion-avion sur aire de trafic.",Aucun dommage ni blessure,S3,,

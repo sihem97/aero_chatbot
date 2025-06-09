@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aviation Safety Assistant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #34a853;
+            --danger-color: #ea4335;
+            --warning-color: #fbbc05;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #202124;
+            --border-radius: 8px;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .status-bar {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .chat-container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .examples-panel {
+            background: var(--card-background);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .example-query {
+            padding: 10px;
+            margin: 5px 0;
+            background: var(--background-color);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .example-query:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .chat-panel {
+            background: var(--card-background);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .input-area {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            flex: 1;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #1557b0;
+        }
+
+        .response-area {
+            background: var(--background-color);
+            padding: 20px;
+            border-radius: var(--border-radius);
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .section h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .severity {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            color: white;
+            font-weight: 500;
+            background: var(--primary-color);
+        }
+
+        .probability-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .probability-table th, .probability-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .probability-table th {
+            background-color: var(--background-color);
+        }
+
+        .probability-table tr.selected {
+            background-color: rgba(26, 115, 232, 0.1);
+            font-weight: bold;
+        }
+
+        .risk-level {
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .risk-A {
+            background-color: #FF0000;
+        }
+
+        .risk-B {
+            background-color: #FFA500;
+        }
+
+        .risk-C {
+            background-color: #FFD700;
+            color: #000000;
+        }
+
+        .risk-D {
+            background-color: #32CD32;
+        }
+
+        .consequence-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: var(--background-color);
+            border-radius: var(--border-radius);
+        }
+
+        .worst-case {
+            padding: 10px;
+            margin: 5px 0;
+            background: rgba(234, 67, 53, 0.1);
+            border-radius: var(--border-radius);
+            color: var(--danger-color);
+        }
+
+        .similar-case {
+            padding: 15px;
+            margin: 10px 0;
+            background: var(--background-color);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .similarity-score {
+            float: right;
+            background: var(--primary-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 14px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: var(--primary-color);
+        }
+
+        .loading::after {
+            content: "...";
+            animation: dots 1.5s steps(5, end) infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { content: "."; }
+            40% { content: ".."; }
+            60%, 100% { content: "..."; }
+        }
+
+        @media (max-width: 768px) {
+            .chat-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-info">
+            <span id="timestamp">Date UTC: 2025-06-09 18:36:40</span> | 
+            <span id="user">Utilisateur: marouuuuuux</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🛫 Aviation Safety Assistant</h1>
+        </div>
+
+        <div class="chat-container">
+            <div class="examples-panel">
+                <h3>Exemples des évenements indésirable</h3>
+                <div class="example-query" onclick="useExample(this)">Un passager est gravement malade pendant le vol</div>
+                <div class="example-query" onclick="useExample(this)">Erreur de pilotage pendant l'approche</div>
+                <div class="example-query" onclick="useExample(this)">Collision aviaire au décollage</div>
+                <div class="example-query" onclick="useExample(this)">Mauvaise communication entre cockpit et cabine</div>
+                <div class="example-query" onclick="useExample(this)">Problème de dégivrage</div>
+                
+                <div class="section" style="margin-top: 20px;">
+                    <h3>Table des Probabilités</h3>
+                    <table class="probability-table">
+                        <thead>
+                            <tr>
+                                <th>Niveau de Probabilité</th>
+                                <th>Occurrence / vol</th>
+                                <th>Occurrence / période</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P5 - Très élevé</td>
+                                <td>1 - 5×10⁻³</td>
+                                <td>>1 fois par jr - Plusieurs fois par jr</td>
+                            </tr>
+                            <tr>
+                                <td>P4 - Élevé</td>
+                                <td>5×10⁻³ - 7.1×10⁻⁴</td>
+                                <td>>1 fois par semaine - <1 fois par jour</td>
+                            </tr>
+                            <tr>
+                                <td>P3 - Médium</td>
+                                <td>7.1×10⁻⁴ - 3.3×10⁻⁴</td>
+                                <td>>1 fois par 15 jrs - <1 fois par semaine</td>
+                            </tr>
+                            <tr>
+                                <td>P2 - Faible</td>
+                                <td>3.3×10⁻⁴ - 1.6×10⁻⁴</td>
+                                <td>>1 fois par mois - <1 fois par 15 jours</td>
+                            </tr>
+                            <tr>
+                                <td>P1 - Très faible</td>
+                                <td>1.6×10⁻⁴ - 1.3×10⁻⁵</td>
+                                <td>>1 fois par an - <1 fois par mois</td>
+                            </tr>
+                            <tr>
+                                <td>P0 - Improbable</td>
+                                <td>1.3×10⁻⁵ - 1.3×10⁻⁶</td>
+                                <td>1 fois par 10 ans - <1 fois par an</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="chat-panel">
+                <div class="input-area">
+                    <div style="display: flex; flex-direction: column; width: 100%; gap: 10px;">
+                        <textarea id="query" placeholder="Décrivez l`évenement indésirable ici..."></textarea>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <label for="probability" style="white-space: nowrap;">Probabilité:</label>
+                            <select id="probability" style="padding: 8px; border-radius: var(--border-radius); border: 1px solid #ddd;" required>
+                                <option value="">Sélectionnez une probabilité</option>
+                                <option value="P0">P0 - Extrêmement improbable</option>
+                                <option value="P1">P1 - Très improbable</option>
+                                <option value="P2">P2 - Improbable</option>
+                                <option value="P3">P3 - Peu probable</option>
+                                <option value="P4">P4 - Probable</option>
+                                <option value="P5">P5 - Très probable</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button onclick="analyzeIncident()">Analyser</button>
+                </div>
+
+                <div id="response" class="response-area"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getRiskLevel(severity, probability) {
+            const riskMatrix = {
+                'P5': {
+                    'S5': 'A', 'S4': 'A', 'S3': 'B', 'S2': 'C', 'S1': 'C', 'S0': 'D'
+                },
+                'P4': {
+                    'S5': 'A', 'S4': 'A', 'S3': 'B', 'S2': 'C', 'S1': 'C', 'S0': 'D'
+                },
+                'P3': {
+                    'S5': 'A', 'S4': 'B', 'S3': 'C', 'S2': 'C', 'S1': 'D', 'S0': 'D'
+                },
+                'P2': {
+                    'S5': 'A', 'S4': 'B', 'S3': 'C', 'S2': 'C', 'S1': 'D', 'S0': 'D'
+                },
+                'P1': {
+                    'S5': 'B', 'S4': 'B', 'S3': 'C', 'S2': 'D', 'S1': 'D', 'S0': 'D'
+                },
+                'P0': {
+                    'S5': 'C', 'S4': 'C', 'S3': 'D', 'S2': 'D', 'S1': 'D', 'S0': 'D'
+                }
+            };
+            return riskMatrix[probability][severity];
+        }
+
+        function useExample(element) {
+            document.getElementById('query').value = element.textContent;
+            const probability = document.getElementById('probability').value;
+            
+            if (!probability) {
+                document.getElementById('response').innerHTML = `
+                    <div style="color: var(--danger-color);">
+                        Veuillez sélectionner un niveau de probabilité avant l'analyse
+                    </div>`;
+                return;
+            }
+            
+            analyzeIncident();
+        }
+
+        function formatResponse(data) {
+            if (data.error) {
+                return `<div style="color: var(--danger-color);">Erreur: ${data.error}</div>`;
+            }
+
+            let html = '';
+            const response = data.response;
+
+            html += `
+                <div class="section">
+                    <h3>Incident Analysé</h3>
+                    <div class="consequence-item">${response.query}</div>
+                </div>`;
+
+            if (response.severity) {
+                const probability = document.getElementById('probability').value;
+                const riskLevel = getRiskLevel(response.severity, probability);
+                
+                html += `
+                    <div class="section">
+                        <h3>Niveau de Sévérité</h3>
+                        <div class="severity">
+                            ${response.severity}
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h3>Niveau de Probabilité</h3>
+                        <div class="severity">
+                            ${probability}
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <h3>Niveau de Risque</h3>
+                            <div class="risk-level risk-${riskLevel}">
+                                ${riskLevel}
+                            </div>
+                        </div>
+                    </div>`;
+            }
+
+            if (response.consequences && response.consequences.length > 0) {
+                html += `
+                    <div class="section">
+                        <h3>Conséquences</h3>
+                        ${response.consequences.map(cons => 
+                            `<div class="consequence-item">${cons}</div>`
+                        ).join('')}
+                    </div>`;
+            }
+
+            if (response.worst_case) {
+                html += `
+                    <div class="section">
+                        <h3>Pire Scénario Considéré</h3>
+                        <div class="worst-case">${response.worst_case}</div>
+                    </div>`;
+            }
+
+            if (response.similar_cases && response.similar_cases.length > 0) {
+                html += `
+                    <div class="section">
+                        <h3>Cas Similaires</h3>
+                        ${response.similar_cases.map(case_ => `
+                            <div class="similar-case">
+                                <span class="similarity-score">${(case_.similarity * 100).toFixed(1)}%</span>
+                                <strong>ID ${case_.id}</strong>: ${case_.incident}
+                                ${case_.consequences && case_.consequences.length > 0 ? `
+                                    <div style="margin-top: 10px;">
+                                        <strong>Conséquences:</strong>
+                                        <ul>
+                                            ${case_.consequences.map(cons => 
+                                                `<li>${cons}</li>`
+                                            ).join('')}
+                                        </ul>
+                                    </div>
+                                ` : ''}
+                                ${case_.worst_case ? `
+                                    <div style="margin-top: 5px;">
+                                        <strong>Pire scénario:</strong> ${case_.worst_case}
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `).join('')}
+                    </div>`;
+            }
+
+            return html;
+        }
+
+        async function analyzeIncident() {
+            const query = document.getElementById('query').value;
+            const probability = document.getElementById('probability').value;
+            const responseDiv = document.getElementById('response');
+            
+            if (!probability) {
+                responseDiv.innerHTML = `
+                    <div style="color: var(--danger-color);">
+                        Veuillez sélectionner un niveau de probabilité
+                    </div>`;
+                return;
+            }
+            
+            if (!query.trim()) {
+                responseDiv.innerHTML = `
+                    <div style="color: var(--danger-color);">
+                        Veuillez entrer une description de l'incident
+                    </div>`;
+                return;
+            }
+            
+            try {
+                responseDiv.innerHTML = '<div class="loading">Analyse en cours</div>';
+                
+                const response = await fetch('http://localhost:5000/chatbot', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ 
+                        query: query,
+                        probability: probability
+                    })
+                });
+                
+                const data = await response.json();
+                responseDiv.innerHTML = formatResponse(data);
+                
+            } catch (error) {
+                responseDiv.innerHTML = `
+                    <div style="color: var(--danger-color);">
+                        Erreur de connexion: ${error.message}. 
+                        Vérifiez que le serveur est en cours d'exécution.
+                    </div>`;
+            }
+        }
+    </script>
+</body>
+</html>
